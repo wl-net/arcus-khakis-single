@@ -74,9 +74,7 @@ networks:
   private:
 
   arcus:
-    driver: macvlan
-    driver_opts:
-      parent: br0
+    driver: bridge
     ipam:
       config:
       - subnet: 192.168.1.1/24
